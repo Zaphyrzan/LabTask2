@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="external.css">
+    </head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="/action_page.php" method="post">
+
+        <div class="container">
+            <label for="fname"><b>Full Name</b></label>
+            <br>
+            <input type="text" placeholder="Enter Full Name" name="fname" required>
+
+            <br><br>
+            
+            <b>Gender:</b>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            
+            <label for="age"><b>Age</b></label>
+            <br>
+            <input type="text" placeholder="Enter your age" name="age" required>
+
+            <br>
+            <label for="phone"><b>Phone Number</b></label>
+            <br>
+            <input type="text" placeholder="Enter your Phone Number" name="phone" required>
+
+            <br>
+            <label for="email"><b>Email</b></label>
+            <br>
+            <input type="text" placeholder="Enter your Email" name="email" required>
+
+            <br>
+            <label for="address"><b>Address</b></label>
+            <br>
+            <input type="text" placeholder="Enter your Full Address" name="address" required>
+
+            <br><br>
+            <label for="State"><b>State:</b></label><br>
+            <select name="cars" id="cars">
+              <option></option>
+              <option value="Perlis">Perlis</option>
+              <option value="Kedah">Kedah</option>
+              <option value="Pulau Pinang">Pulau Pinang</option>
+              <option value="Melaka">Melaka</option>
+              <option value="Selangor">Selangor</option>
+              <option value="Negeri Sembilan">Negeri Sembilan</option>
+              <option value="Johor">Johor </option>
+              <option value="Pahang">Pahang</option>
+              <option value="Kelantan">Kelantan</option>
+              <option value="Terengganu">Terengganu</option>
+              <option value="Sabah">Sabah </option>
+              <option value="Sarawak">Sarawak </option>
+              <option value="W.P Kuala Lumpur">Kuala Lumpur</option>
+              <option value="W.P Labuan">Labuan</option>
+              <option value="W.P Putrajaya">Putrajaya</option>
+            </select>
+
+            <br><br>
+            <label for="uname"><b>Username</b></label><br>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <br>
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <br>
+            <label for="psw2"><b>Confirm Password</b></label><br>
+            <input type="password" placeholder="Confirm Password" name="psw2" required>
+        </div>
+
+        <h5>By signing up you agree to our <a href="terms&condition.html">Terms and Condition</a></h5>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="submit" class="btnRegister" onclick="document.location='login.html'">Submit</button>
+            <button type="reset" class="btnCancel">Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
